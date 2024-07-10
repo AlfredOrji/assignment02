@@ -6,18 +6,18 @@ Build and Run the Docker Container
 
 1. Build the Docker Image:
     bash
-    docker build -t alfredeorji762/project2 .
+    docker build -t docker push alfredeorji762/toronto-time-app .
     
 
 2. Push the Docker Image to Docker Hub:
     bash
     docker login
-    docker push alfredeorji762/project2:tagname
+    docker push docker push alfredeorji762/toronto-time-app:tagname
     
 
 3. Run the Docker Container Locally:
     bash
-    docker run --network p1 --name app -dp 3030:3030 alfredeorji762/project2:tagname
+    docker run --network p1 --name app -dp 3030:3030 docker push alfredeorji762/toronto-time-app:tagname
    
 
 4. Access the Application:
@@ -43,7 +43,7 @@ Build and Run the Docker Container
         spec:
           containers:
           - name: python-app
-            image: alfredeorji762/project2 .
+            image: docker push alfredeorji762/toronto-time-app .
             ports:
             - containerPort: 3030
     
